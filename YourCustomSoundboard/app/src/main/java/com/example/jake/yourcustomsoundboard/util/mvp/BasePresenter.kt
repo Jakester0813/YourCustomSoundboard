@@ -8,7 +8,7 @@ import javax.inject.Inject
  * Created by jake on 1/22/2018.
  */
 
-class BasePresenter<V : IBaseView<*>> @Inject
+open class BasePresenter<V : IBaseView<*>> @Inject
 constructor() : MvpPresenter<V> {
 
     var mView: V? = null
