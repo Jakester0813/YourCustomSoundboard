@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Your Custom Soundboard</string>
+    <string name="settings_action">Settings</string>
+    <string name="help_action">Help</string>
 </resources>
