@@ -6,11 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.jake.yourcustomsoundboard.MainSoundboardActivity">
 
-    <TableLayout
-        android:id="@+id/soundboard_table"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sounds"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </TableLayout>
-
+        android:layout_height="match_parent"/>
 </android.support.constraint.ConstraintLayout>
