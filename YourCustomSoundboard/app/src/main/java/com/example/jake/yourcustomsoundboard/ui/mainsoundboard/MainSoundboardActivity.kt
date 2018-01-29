@@ -10,12 +10,18 @@ import android.view.MenuItem
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.example.jake.yourcustomsoundboard.ui.help.HelpActivity
+import com.example.jake.yourcustomsoundboard.ui.mainsoundboard.MainSoundBoardPresenter
+import com.example.jake.yourcustomsoundboard.ui.mainsoundboard.MainSoundboardActivityContract
 import com.example.jake.yourcustomsoundboard.util.EqualSpacingItemDecoration
+import javax.inject.Inject
 
 class MainSoundboardActivity : AppCompatActivity() {
 
     @BindView(R.id.rv_sounds)
     var mSoundsRecycler : RecyclerView? = null
+
+    @Inject
+    internal var mPresenter: MainSoundBoardPresenter<MainSoundboardActivityContract.View>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

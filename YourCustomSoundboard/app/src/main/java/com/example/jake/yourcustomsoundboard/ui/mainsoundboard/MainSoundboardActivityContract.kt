@@ -14,7 +14,7 @@ interface MainSoundboardActivityContract {
     }
 
     interface Presenter<V : IBaseView<*>> : MvpPresenter<V>{
-
+        fun playSound(id: Int)
     }
 
 
