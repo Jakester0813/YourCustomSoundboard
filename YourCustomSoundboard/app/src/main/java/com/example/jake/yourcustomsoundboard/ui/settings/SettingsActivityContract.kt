@@ -14,7 +14,7 @@ interface SettingsActivityContract {
     }
 
     interface Presenter<V : IBaseView<*>> : MvpPresenter<V>{
-
+        fun setNumPrefs(): Int
     }
 
 
